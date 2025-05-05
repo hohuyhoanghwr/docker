@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Titanic Dataset</title>
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+</head>
+<body>
+
+<nav>
+  <a href="/">Home</a>
+  <a href="/titanic">Titanic</a>
+  <a href="https://github.com/hohuyhoanghwr">About</a>
+</nav>
+
+<main>
+  <h1>Survivors by Gender</h1>
+  <img src="{{ url_for('static', filename='survivors_chart.png') }}" alt="Survivors Chart" style="max-width: 500px; display: block; margin: auto;">
+
+  <h2>Titanic Data Preview</h2>
+  {{ table | safe }}
+</main>
+
+</body>
+</html>

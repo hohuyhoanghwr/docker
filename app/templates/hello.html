@@ -6,9 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>My first dynamic Website</title>
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <link rel="stylesheet" href="https://www.hwr-berlin.de/">
 </head>
 
 <body>
+    <nav style="background-color: #f2f2f2; padding: 10px;">
+        <a href="/" style="margin-right: 15px;">Home</a>
+        <a href="/titanic" style="margin-right: 15px;">Titanic</a>
+        <a href="https://github.com/hohuyhoanghwr" target="_blank">About</a>
+    </nav>
+
     <main>
         <h1>I have been seen {{ count }} times.</h1>
         <ul>
@@ -16,7 +23,12 @@
             <li>{{ i }}: Hello {{ name }}! </li>
             {% endfor %}
         </ul>
+        <img src="{{ url_for('static', filename='image.jpg') }}" alt="My Photo" style="max-width: 300px; display: block; margin: 20px auto;">
     </main>
+    <footer style="text-align: center; margin-top: 40px; font-size: 0.9em; color: #666;">
+        © 2025 Your Name
+    </footer>
+      
 </body>
 
 </html>

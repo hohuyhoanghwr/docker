@@ -1,0 +1,1 @@
+First use of docker. Many thanks to professor Roland and ChatGPT

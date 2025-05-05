@@ -13,9 +13,6 @@ RUN pip install -r requirements.txt
 # Copy the current directory contents into the container at /app
 COPY app/ /app
 
-# Run computation.py when the container launches
-CMD ["python", "computation.py"]
-
 # Make port 80 available to the world outside this container
 EXPOSE 80
 
